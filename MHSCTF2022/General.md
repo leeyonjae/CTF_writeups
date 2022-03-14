@@ -28,7 +28,7 @@ Using regex sandbox at [regex101](https://regex101.com) I found the flag.
 
 The file given was 3D drawing, which should be rotated to a certain angle:
 
-![flag](images/perspective.png "Solution")
+![flag](Images/perspective.png "Solution")
 
 **Flag: `flag{free}`**
 
