@@ -14,7 +14,7 @@ The file is a PNG with no visible image. However, taking a look with a hex code 
 
 The Image:
 
-![image](images/inplainsight.png "Mickey Mouse-esque Logo")
+![image](Images/inplainsight.png "Mickey Mouse-esque Logo")
 
 This is a steganography problem. I found a [tool](https://stylesuxx.github.io/steganography/) that decoded the hidden message.
 
@@ -55,7 +55,7 @@ A PNG file begins with a specific 8-byte code and ends with `IEND....`. Taking a
 
 I created a new PNG file by copying and pasting the nested part, which is:
 
-![chimera](images/chimera2.png)
+![chimera](Images/chimera2.png)
 
 **Flag: `flag{4bs0rb3d}`**
 
@@ -65,7 +65,7 @@ I created a new PNG file by copying and pasting the nested part, which is:
 
 At first glance, the image is just a pitch black canvas. However, if the exposure is manipulated, the letters appear:
 
-![notBlank](images/blankslate3.png)
+![notBlank](Images/blankslate3.png)
 
 **Flag: `flag{1t$_n0t_3mpty}`**
 
@@ -135,6 +135,6 @@ Turns out this file does not have the first 4 bytes of a PNG file header.
 
 Insert `0x89 0x50 0x4e 0x47` at the beginning of the file and the picture becomes visible.
 
-![recovered](images/corrupt.png)
+![recovered](Images/corrupt.png)
 
 **Flag: `flag{str@ight_n_narr0w}`**
