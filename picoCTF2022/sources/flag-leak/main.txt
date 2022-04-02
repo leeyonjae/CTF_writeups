@@ -1,0 +1,50 @@
+
+vuln:     file format elf32-i386
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+080493bf <main>:
+ 80493bf:	f3 0f 1e fb          	endbr32 
+ 80493c3:	8d 4c 24 04          	lea    0x4(%esp),%ecx
+ 80493c7:	83 e4 f0             	and    $0xfffffff0,%esp
+ 80493ca:	ff 71 fc             	pushl  -0x4(%ecx)
+ 80493cd:	55                   	push   %ebp
+ 80493ce:	89 e5                	mov    %esp,%ebp
+ 80493d0:	53                   	push   %ebx
+ 80493d1:	51                   	push   %ecx
+ 80493d2:	83 ec 10             	sub    $0x10,%esp
+ 80493d5:	e8 16 fe ff ff       	call   80491f0 <__x86.get_pc_thunk.bx>
+ 80493da:	81 c3 26 2c 00 00    	add    $0x2c26,%ebx
+ 80493e0:	8b 83 fc ff ff ff    	mov    -0x4(%ebx),%eax
+ 80493e6:	8b 00                	mov    (%eax),%eax
+ 80493e8:	6a 00                	push   $0x0
+ 80493ea:	6a 02                	push   $0x2
+ 80493ec:	6a 00                	push   $0x0
+ 80493ee:	50                   	push   %eax
+ 80493ef:	e8 5c fd ff ff       	call   8049150 <setvbuf@plt>
+ 80493f4:	83 c4 10             	add    $0x10,%esp
+ 80493f7:	e8 14 fd ff ff       	call   8049110 <getegid@plt>
+ 80493fc:	89 45 f4             	mov    %eax,-0xc(%ebp)
+ 80493ff:	83 ec 04             	sub    $0x4,%esp
+ 8049402:	ff 75 f4             	pushl  -0xc(%ebp)
+ 8049405:	ff 75 f4             	pushl  -0xc(%ebp)
+ 8049408:	ff 75 f4             	pushl  -0xc(%ebp)
+ 804940b:	e8 80 fd ff ff       	call   8049190 <setresgid@plt>
+ 8049410:	83 c4 10             	add    $0x10,%esp
+ 8049413:	e8 1b ff ff ff       	call   8049333 <vuln>
+ 8049418:	b8 00 00 00 00       	mov    $0x0,%eax
+ 804941d:	8d 65 f8             	lea    -0x8(%ebp),%esp
+ 8049420:	59                   	pop    %ecx
+ 8049421:	5b                   	pop    %ebx
+ 8049422:	5d                   	pop    %ebp
+ 8049423:	8d 61 fc             	lea    -0x4(%ecx),%esp
+ 8049426:	c3                   	ret    
+
+Disassembly of section .fini:

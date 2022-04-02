@@ -1,0 +1,340 @@
+Compiled from "KeygenMe.java"
+public class KeygenMe {
+  public KeygenMe();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: new           #2                  // class java/util/Scanner
+       3: dup
+       4: getstatic     #3                  // Field java/lang/System.in:Ljava/io/InputStream;
+       7: invokespecial #4                  // Method java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+      10: astore_1
+      11: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      14: ldc           #6                  // String Enter key:
+      16: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      19: aload_1
+      20: invokevirtual #8                  // Method java/util/Scanner.nextLine:()Ljava/lang/String;
+      23: astore_2
+      24: aload_2
+      25: invokevirtual #9                  // Method java/lang/String.length:()I
+      28: bipush        34
+      30: if_icmpeq     42
+      33: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      36: ldc           #10                 // String Invalid key
+      38: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      41: return
+      42: aload_2
+      43: bipush        33
+      45: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+      48: bipush        125
+      50: if_icmpeq     62
+      53: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      56: ldc           #10                 // String Invalid key
+      58: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      61: return
+      62: aload_2
+      63: bipush        32
+      65: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+      68: bipush        57
+      70: if_icmpeq     82
+      73: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      76: ldc           #10                 // String Invalid key
+      78: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      81: return
+      82: aload_2
+      83: bipush        31
+      85: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+      88: bipush        56
+      90: if_icmpeq     102
+      93: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      96: ldc           #10                 // String Invalid key
+      98: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     101: return
+     102: aload_2
+     103: bipush        30
+     105: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     108: bipush        99
+     110: if_icmpeq     122
+     113: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     116: ldc           #10                 // String Invalid key
+     118: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     121: return
+     122: aload_2
+     123: bipush        29
+     125: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     128: bipush        97
+     130: if_icmpeq     142
+     133: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     136: ldc           #10                 // String Invalid key
+     138: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     141: return
+     142: aload_2
+     143: bipush        28
+     145: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     148: bipush        99
+     150: if_icmpeq     162
+     153: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     156: ldc           #10                 // String Invalid key
+     158: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     161: return
+     162: aload_2
+     163: bipush        27
+     165: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     168: bipush        56
+     170: if_icmpeq     182
+     173: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     176: ldc           #10                 // String Invalid key
+     178: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     181: return
+     182: aload_2
+     183: bipush        26
+     185: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     188: bipush        51
+     190: if_icmpeq     202
+     193: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     196: ldc           #10                 // String Invalid key
+     198: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     201: return
+     202: aload_2
+     203: bipush        25
+     205: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     208: bipush        55
+     210: if_icmpeq     222
+     213: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     216: ldc           #10                 // String Invalid key
+     218: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     221: return
+     222: aload_2
+     223: bipush        24
+     225: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     228: bipush        95
+     230: if_icmpeq     242
+     233: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     236: ldc           #10                 // String Invalid key
+     238: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     241: return
+     242: aload_2
+     243: bipush        23
+     245: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     248: bipush        100
+     250: if_icmpeq     262
+     253: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     256: ldc           #10                 // String Invalid key
+     258: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     261: return
+     262: aload_2
+     263: bipush        22
+     265: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     268: bipush        51
+     270: if_icmpeq     282
+     273: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     276: ldc           #10                 // String Invalid key
+     278: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     281: return
+     282: aload_2
+     283: bipush        21
+     285: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     288: bipush        114
+     290: if_icmpeq     302
+     293: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     296: ldc           #10                 // String Invalid key
+     298: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     301: return
+     302: aload_2
+     303: bipush        20
+     305: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     308: bipush        49
+     310: if_icmpeq     322
+     313: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     316: ldc           #10                 // String Invalid key
+     318: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     321: return
+     322: aload_2
+     323: bipush        19
+     325: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     328: bipush        117
+     330: if_icmpeq     342
+     333: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     336: ldc           #10                 // String Invalid key
+     338: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     341: return
+     342: aload_2
+     343: bipush        18
+     345: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     348: bipush        113
+     350: if_icmpeq     362
+     353: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     356: ldc           #10                 // String Invalid key
+     358: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     361: return
+     362: aload_2
+     363: bipush        17
+     365: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     368: bipush        51
+     370: if_icmpeq     382
+     373: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     376: ldc           #10                 // String Invalid key
+     378: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     381: return
+     382: aload_2
+     383: bipush        16
+     385: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     388: bipush        114
+     390: if_icmpeq     402
+     393: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     396: ldc           #10                 // String Invalid key
+     398: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     401: return
+     402: aload_2
+     403: bipush        15
+     405: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     408: bipush        95
+     410: if_icmpeq     422
+     413: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     416: ldc           #10                 // String Invalid key
+     418: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     421: return
+     422: aload_2
+     423: bipush        14
+     425: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     428: bipush        103
+     430: if_icmpeq     442
+     433: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     436: ldc           #10                 // String Invalid key
+     438: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     441: return
+     442: aload_2
+     443: bipush        13
+     445: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     448: bipush        110
+     450: if_icmpeq     462
+     453: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     456: ldc           #10                 // String Invalid key
+     458: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     461: return
+     462: aload_2
+     463: bipush        12
+     465: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     468: bipush        49
+     470: if_icmpeq     482
+     473: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     476: ldc           #10                 // String Invalid key
+     478: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     481: return
+     482: aload_2
+     483: bipush        11
+     485: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     488: bipush        108
+     490: if_icmpeq     502
+     493: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     496: ldc           #10                 // String Invalid key
+     498: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     501: return
+     502: aload_2
+     503: bipush        10
+     505: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     508: bipush        48
+     510: if_icmpeq     522
+     513: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     516: ldc           #10                 // String Invalid key
+     518: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     521: return
+     522: aload_2
+     523: bipush        9
+     525: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     528: bipush        48
+     530: if_icmpeq     542
+     533: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     536: ldc           #10                 // String Invalid key
+     538: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     541: return
+     542: aload_2
+     543: bipush        8
+     545: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     548: bipush        55
+     550: if_icmpeq     562
+     553: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     556: ldc           #10                 // String Invalid key
+     558: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     561: return
+     562: aload_2
+     563: bipush        7
+     565: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     568: bipush        123
+     570: if_icmpeq     582
+     573: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     576: ldc           #10                 // String Invalid key
+     578: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     581: return
+     582: aload_2
+     583: bipush        6
+     585: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     588: bipush        70
+     590: if_icmpeq     602
+     593: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     596: ldc           #10                 // String Invalid key
+     598: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     601: return
+     602: aload_2
+     603: iconst_5
+     604: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     607: bipush        84
+     609: if_icmpeq     621
+     612: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     615: ldc           #10                 // String Invalid key
+     617: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     620: return
+     621: aload_2
+     622: iconst_4
+     623: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     626: bipush        67
+     628: if_icmpeq     640
+     631: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     634: ldc           #10                 // String Invalid key
+     636: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     639: return
+     640: aload_2
+     641: iconst_3
+     642: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     645: bipush        111
+     647: if_icmpeq     659
+     650: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     653: ldc           #10                 // String Invalid key
+     655: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     658: return
+     659: aload_2
+     660: iconst_2
+     661: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     664: bipush        99
+     666: if_icmpeq     678
+     669: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     672: ldc           #10                 // String Invalid key
+     674: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     677: return
+     678: aload_2
+     679: iconst_1
+     680: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     683: bipush        105
+     685: if_icmpeq     697
+     688: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     691: ldc           #10                 // String Invalid key
+     693: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     696: return
+     697: aload_2
+     698: iconst_0
+     699: invokevirtual #11                 // Method java/lang/String.charAt:(I)C
+     702: bipush        112
+     704: if_icmpeq     716
+     707: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     710: ldc           #10                 // String Invalid key
+     712: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     715: return
+     716: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     719: ldc           #12                 // String Valid key
+     721: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     724: return
+}

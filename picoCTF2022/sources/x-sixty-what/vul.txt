@@ -1,0 +1,26 @@
+
+vuln:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+00000000004012b2 <vuln>:
+  4012b2:	f3 0f 1e fa          	endbr64 
+  4012b6:	55                   	push   %rbp
+  4012b7:	48 89 e5             	mov    %rsp,%rbp
+  4012ba:	48 83 ec 40          	sub    $0x40,%rsp
+  4012be:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  4012c2:	48 89 c7             	mov    %rax,%rdi
+  4012c5:	b8 00 00 00 00       	mov    $0x0,%eax
+  4012ca:	e8 31 fe ff ff       	callq  401100 <gets@plt>
+  4012cf:	90                   	nop
+  4012d0:	c9                   	leaveq 
+  4012d1:	c3                   	retq   
+
+Disassembly of section .fini:

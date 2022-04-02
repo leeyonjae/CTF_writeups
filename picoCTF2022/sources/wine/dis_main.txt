@@ -1,0 +1,32 @@
+
+vuln.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+004015cf <_main>:
+  4015cf:	55                   	push   %ebp
+  4015d0:	89 e5                	mov    %esp,%ebp
+  4015d2:	83 e4 f0             	and    $0xfffffff0,%esp
+  4015d5:	83 ec 10             	sub    $0x10,%esp
+  4015d8:	e8 e3 00 00 00       	call   4016c0 <___main>
+  4015dd:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
+  4015e4:	a1 1c 30 40 00       	mov    0x40301c,%eax
+  4015e9:	ff d0                	call   *%eax
+  4015eb:	c7 44 24 0c 00 00 00 	movl   $0x0,0xc(%esp)
+  4015f2:	00 
+  4015f3:	c7 44 24 08 04 00 00 	movl   $0x4,0x8(%esp)
+  4015fa:	00 
+  4015fb:	c7 44 24 04 00 00 00 	movl   $0x0,0x4(%esp)
+  401602:	00 
+  401603:	89 04 24             	mov    %eax,(%esp)
+  401606:	e8 71 10 00 00       	call   40267c <_setvbuf>
+  40160b:	e8 99 ff ff ff       	call   4015a9 <_vuln>
+  401610:	b8 00 00 00 00       	mov    $0x0,%eax
+  401615:	c9                   	leave  
+  401616:	c3                   	ret    
+  401617:	90                   	nop
+  401618:	66 90                	xchg   %ax,%ax
+  40161a:	66 90                	xchg   %ax,%ax
+  40161c:	66 90                	xchg   %ax,%ax
+  40161e:	66 90                	xchg   %ax,%ax

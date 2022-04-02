@@ -1,0 +1,39 @@
+
+vuln.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+00401530 <_win>:
+  401530:	55                   	push   %ebp
+  401531:	89 e5                	mov    %esp,%ebp
+  401533:	83 ec 68             	sub    $0x68,%esp
+  401536:	c7 44 24 04 00 40 40 	movl   $0x404000,0x4(%esp)
+  40153d:	00 
+  40153e:	c7 04 24 02 40 40 00 	movl   $0x404002,(%esp)
+  401545:	e8 72 11 00 00       	call   4026bc <_fopen>
+  40154a:	89 45 f4             	mov    %eax,-0xc(%ebp)
+  40154d:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+  401551:	75 18                	jne    40156b <_win+0x3b>
+  401553:	c7 04 24 0c 40 40 00 	movl   $0x40400c,(%esp)
+  40155a:	e8 25 11 00 00       	call   402684 <_puts>
+  40155f:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
+  401566:	e8 69 11 00 00       	call   4026d4 <_exit>
+  40156b:	8b 45 f4             	mov    -0xc(%ebp),%eax
+  40156e:	89 44 24 08          	mov    %eax,0x8(%esp)
+  401572:	c7 44 24 04 40 00 00 	movl   $0x40,0x4(%esp)
+  401579:	00 
+  40157a:	8d 45 b4             	lea    -0x4c(%ebp),%eax
+  40157d:	89 04 24             	mov    %eax,(%esp)
+  401580:	e8 3f 11 00 00       	call   4026c4 <_fgets>
+  401585:	8d 45 b4             	lea    -0x4c(%ebp),%eax
+  401588:	89 04 24             	mov    %eax,(%esp)
+  40158b:	e8 f4 10 00 00       	call   402684 <_puts>
+  401590:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
+  401597:	a1 1c 30 40 00       	mov    0x40301c,%eax
+  40159c:	ff d0                	call   *%eax
+  40159e:	89 04 24             	mov    %eax,(%esp)
+  4015a1:	e8 26 11 00 00       	call   4026cc <_fflush>
+  4015a6:	90                   	nop
+  4015a7:	c9                   	leave  
+  4015a8:	c3                   	ret    

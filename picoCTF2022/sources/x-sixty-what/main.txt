@@ -1,0 +1,43 @@
+
+vuln:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+00000000004012d2 <main>:
+  4012d2:	f3 0f 1e fa          	endbr64 
+  4012d6:	55                   	push   %rbp
+  4012d7:	48 89 e5             	mov    %rsp,%rbp
+  4012da:	48 83 ec 20          	sub    $0x20,%rsp
+  4012de:	89 7d ec             	mov    %edi,-0x14(%rbp)
+  4012e1:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+  4012e5:	48 8b 05 84 2d 00 00 	mov    0x2d84(%rip),%rax        # 404070 <stdout@@GLIBC_2.2.5>
+  4012ec:	b9 00 00 00 00       	mov    $0x0,%ecx
+  4012f1:	ba 02 00 00 00       	mov    $0x2,%edx
+  4012f6:	be 00 00 00 00       	mov    $0x0,%esi
+  4012fb:	48 89 c7             	mov    %rax,%rdi
+  4012fe:	e8 1d fe ff ff       	callq  401120 <setvbuf@plt>
+  401303:	e8 08 fe ff ff       	callq  401110 <getegid@plt>
+  401308:	89 45 fc             	mov    %eax,-0x4(%rbp)
+  40130b:	8b 55 fc             	mov    -0x4(%rbp),%edx
+  40130e:	8b 4d fc             	mov    -0x4(%rbp),%ecx
+  401311:	8b 45 fc             	mov    -0x4(%rbp),%eax
+  401314:	89 ce                	mov    %ecx,%esi
+  401316:	89 c7                	mov    %eax,%edi
+  401318:	b8 00 00 00 00       	mov    $0x0,%eax
+  40131d:	e8 ae fd ff ff       	callq  4010d0 <setresgid@plt>
+  401322:	48 8d 3d 3f 0d 00 00 	lea    0xd3f(%rip),%rdi        # 402068 <_IO_stdin_used+0x68>
+  401329:	e8 92 fd ff ff       	callq  4010c0 <puts@plt>
+  40132e:	b8 00 00 00 00       	mov    $0x0,%eax
+  401333:	e8 7a ff ff ff       	callq  4012b2 <vuln>
+  401338:	b8 00 00 00 00       	mov    $0x0,%eax
+  40133d:	c9                   	leaveq 
+  40133e:	c3                   	retq   
+
+Disassembly of section .fini:
