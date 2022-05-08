@@ -788,7 +788,7 @@ Given the gadgets above, I used these registers like this:
 |1 |`"/bin"` |Memory at `.bss`|None|Memory at `.bss`|
 |2 |`"//sh"` |Memory at `.bss`|None|Memory at `.bss` + 4|
 |3 |Memory at `.bss` |Memory at `.bss`|None|Memory at `.bss` + 12|
-|3 |11 (`0x0b`), syscall code for `execve()` |Memory at `.bss`|`NULL`|`NULL`|
+|4 |11 (`0x0b`), syscall code for `execve()` |Memory at `.bss`|`NULL`|`NULL`|
 
 Utilizing what I found, I wrote an [exploit script](solutions/ropfu.py) that opens the shell.
 
