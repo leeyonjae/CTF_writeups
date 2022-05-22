@@ -1,5 +1,9 @@
 # CrewCTF 2022 Writeup
 
+- Yonjae Lee (yonjae.lee.93@gmail.com)
+- Site: <https://crewc.tf> ([CTFTime Info](https://ctftime.org/event/1568/))
+- 15 Apr 2022 ~ 15 May 2022
+
 ## ez-xor (Crypto)
 
 > its simple xor

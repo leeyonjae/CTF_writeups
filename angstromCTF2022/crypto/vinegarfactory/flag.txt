@@ -1,0 +1,1 @@
+﻿ctf{temp_flag}
